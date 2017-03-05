@@ -1,27 +1,10 @@
-Welcome to the Gomix BETA
+Timestamp Microservice
 =========================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
-
-Gomix is a developer playground that lets you code a real web-app without the slow setup and deployment steps.
-
-[About Gomix](https://gomix.com/about)
-
-
-Your Project
+User stories
 ------------
+* I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+* If it does, it returns both the Unix timestamp and the natural language form of that date.
+* If it does not contain a date or Unix timestamp, it returns null for those properties.
 
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env`
-
-On the front-end,
-- edit `client.js`, `style.css` and `index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-
-Made by Fog Creek
------------------
-
-\ ゜o゜)ノ
+Made by fntgnn
