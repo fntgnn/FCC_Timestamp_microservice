@@ -10,24 +10,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sciao caro</title>
+    <title>Timestamp microservice</title>
     <meta name="description" content="A cool thing made with Gomix">
-    <link id="favicon" rel="icon" href="https://gomix.com/favicon-app.ico" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <header>
-      <h1>
-        Buonasera
-      </h1>
-    </header>
-
-    <main>
-      Benvenutoooo
-    </main>
+    <div class="container">
+            <h1 class="header">
+                API Basejump: Timestamp microservice
+            </h1>
+      <h2>
+        Created by @fntgnn
+      </h2>
+            <blockquote>
+                User stories:
+                <ul>1) I can pass a string as a parameter, and it will check to see whether that string 
+                contains either a unix timestamp or a natural language date (example: January 1, 2016)</ul>
+                <ul>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</ul>
+                <ul>3) If it does not contain a date or Unix timestamp, it returns null for those properties.</ul>
+            </blockquote>
+            <h3>Example usage:</h3>
+            <code>https://fntgnn-fcc-timestamp-microservice.gomix.me/December%2015,%202015</code><br>
+            <code>https://fntgnn-fcc-timestamp-microservice.gomix.me/1450137600</code>
+            <h3>Example output:</h3>
+            <code>
+                {
+                  "unix": 1450137600,
+                  "natural": "December 15, 2015"
+                }
+            </code>
+        </div>
 
 
     <!-- Your web-app is https, so your scripts need to be too -->
